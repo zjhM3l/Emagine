@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/userinfo_relativelayout"
+    >
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/llTypeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/topicViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/topicIndicator"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="66dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_rect_home_topic_6dp_bg" />
+
+    </LinearLayout>
+
+
+    <!--    main part of user information-->
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/info"
+        android:layout_below="@+id/llTypeViewPager"
+        android:layout_above="@+id/llTypeViewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray9">
+
+        <!--    标题栏-->
+        <com.demo.opencv.infoUtil.widget.TitleLayout
+            android:id="@+id/tl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--    头像-->
+        <LinearLayout
+            android:id="@+id/ll_portrait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:background="@color/white">
+
+            <com.demo.opencv.infoUtil.widget.RoundImageView
+                android:id="@+id/ri_portrait"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/padding_left_and_right"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_header"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change"
+                android:textColor="@color/gray3"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/padding_left_and_right"/>
+
+        </LinearLayout>
+        <!--    编辑界面，此处可以写成一个ItemGroup上传至com上-->
+
+        <com.demo.opencv.infoUtil.widget.ItemGroup
+            android:id="@+id/ig_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:edt_hint_content="修改昵称"
+            app:paddingLeft="@dimen/padding_left_and_right"
+            app:title="@string/my_name" />
+
+        <com.demo.opencv.infoUtil.widget.ItemGroup
+            android:id="@+id/ig_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:edt_hint_content="unknown"
+            app:paddingLeft="@dimen/padding_left_and_right"
+            app:title="@string/my_gender"/>
+
+        <com.demo.opencv.infoUtil.widget.ItemGroup
+            android:id="@+id/ig_brithday"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            app:edt_hint_content="blank"
+            app:paddingLeft="@dimen/padding_left_and_right"
+            app:title="@string/my_brithday" />
+        <com.demo.opencv.infoUtil.widget.ItemGroup
+            android:id="@+id/ig_contact"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            app:edt_hint_content="blank"
+            app:paddingLeft="@dimen/padding_left_and_right"
+            app:title="@string/my_contact" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/id_recyclerview_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:scrollbars="none"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <!--    main part of user information end-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/id_recyclerview_horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_below="@+id/info"-->
+<!--        android:background="#FF0000"-->
+<!--        android:scrollbars="none"-->
+<!--        >-->
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+
+<!--    android:layout_above="@+id/llTypeViewPager1"-->
+<!--    android:layout_below="@+id/info"-->
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/llTypeViewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/topicViewPager1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/topicIndicator1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="66dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_rect_home_topic_6dp_bg" />
+
+    </LinearLayout>
+
+</RelativeLayout>

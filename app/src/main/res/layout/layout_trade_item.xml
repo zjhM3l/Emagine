@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/want_other_image"
+        android:src="@drawable/logo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"/>
+    <TextView
+        android:id="@+id/want_art_role"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="WANT"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/want_art_image"
+        android:src="@drawable/logo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"/>
+    <TextView
+        android:id="@+id/want_stage"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ff0000"
+        android:text="STAGE"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_user_dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minWidth="200dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingBottom="30dp"
+    android:paddingTop="30dp">
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:minHeight="45dp"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/text_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:minHeight="45dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_save_pop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Confirm" />
+
+</LinearLayout>

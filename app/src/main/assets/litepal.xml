@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="UserData"></dbname>
+
+    <version value="2"></version>
+    <dbname value="ArtData"></dbname>
+
+    <version value="2"></version>
+    <dbname value="Owns"></dbname>
+
+    <version value="2"></version>
+    <dbname value="Want"></dbname>
+
+    <version value="2"></version>
+    <dbname value="LoginUser"></dbname>
+
+    <version value="2"></version>
+    <list>
+        <mapping class="com.demo.opencv.models.UserData"></mapping>
+        <mapping class="com.demo.opencv.models.ArtData"></mapping>
+        <mapping class="com.demo.opencv.models.Owns"></mapping>
+        <mapping class="com.demo.opencv.models.Want"></mapping>
+        <mapping class="com.demo.opencv.models.LoginUser"></mapping>
+    </list>
+</litepal>

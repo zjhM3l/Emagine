@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Emagine</string>
+
+    <!--    个人信息（编辑信息）-->
+    <string name="my_name">name</string>
+    <string name="my_gender">gender</string>
+    <string name="my_brithday">birthday</string>
+    <string name="my_contact">contact</string>
+
+</resources>

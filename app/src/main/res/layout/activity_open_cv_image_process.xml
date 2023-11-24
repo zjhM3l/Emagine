@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_view">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/llTypeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/topicViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/topicIndicator"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="66dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_rect_home_topic_6dp_bg" />
+
+    </LinearLayout>
+    <Button
+        android:layout_below="@id/llTypeViewPager"
+        android:id="@+id/btn_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Photo"/>
+
+    <ImageView
+        android:layout_below="@id/btn_select"
+        android:scrollbars="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/opencv_iv"
+        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<!--    <LinearLayout-->
+<!--        android:layout_above="@id/btn_save"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_gray"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Gray"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_corrosion"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Corrosion"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_dilate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Dilate"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_medianBlur"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="MedianBlur"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_gaussian"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Gaussian"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_cannyScan"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="CannyScan"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_binary"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Binarization" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_roi"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="ROI" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_face"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Front Face Detect" />-->
+
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+    <LinearLayout
+        android:layout_above="@id/btn_save"
+        android:id="@+id/llTypeViewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/topicViewPager1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/topicIndicator1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="66dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_rect_home_topic_6dp_bg" />
+
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Photo"/>
+
+
+
+</RelativeLayout>

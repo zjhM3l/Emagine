@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ConfirmCodeActivity">
+
+    <com.demo.opencv.confirmCodeUtil.InputCodeLayout
+        android:layout_marginTop="120dp"
+        android:id="@+id/inputCodeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:icl_divideWidth="10dp"
+        app:icl_focusBackground="@drawable/bg_edit_focus"
+        app:icl_height="50dp"
+        app:icl_number="5"
+        app:icl_showMode="password"
+        app:icl_textColor="@color/colorPrimaryDark"
+        app:icl_textSize="16sp"
+        app:icl_unFocusBackground="@drawable/bg_edit_un_focus"
+        app:icl_width="50dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="normal"
+        android:text="Plain text display"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="password"
+        android:text="Password display"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clear"
+        android:text="Clear input"/>
+
+    <TextView
+        android:id="@+id/confirm_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text=""
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/header_name"
+        android:background="#f9f4f4"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/art_info_name"
+            android:layout_centerInParent="true"
+            android:text="Art Detail"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/back_icons"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/zt"
+        android:background="#979696"
+        android:layout_below="@id/header_name"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/art_info_image"
+        android:layout_below="@+id/zt"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/zt2"
+        android:layout_below="@id/art_info_image"
+        android:background="#979696"
+        />
+
+    <TextView
+        android:id="@+id/art_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zt2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Reference Price"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/price_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/art_info"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp"
+        android:text="￥119.00"
+        android:textColor="#f00"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/xian1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/price_info"
+        android:layout_marginTop="8dp"
+        android:background="#c7c5c5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/xian1"
+        android:id="@+id/id_recyclerview_horizontal_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:scrollbars="none"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/button_btn_xiangqing"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+
+
+        <RadioButton
+            android:id="@+id/btn_owner"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Owner"
+            android:textSize="11sp" />
+
+        <!--        <RadioButton-->
+        <!--            android:id="@+id/btn_contact"-->
+        <!--            android:layout_width="70dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_toStartOf="@+id/btn_owner"-->
+        <!--            android:button="@null"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Contact"-->
+        <!--            android:textSize="11sp" />-->
+
+        <Button
+            android:id="@+id/btn_want"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="I Want It"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/kong_xiangqing"
+        android:layout_above="@id/button_btn_xiangqing"
+        android:background="#b9b8b8"
+        />
+</RelativeLayout>
